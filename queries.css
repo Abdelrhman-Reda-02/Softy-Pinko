@@ -1,0 +1,364 @@
+/*************************************************/
+/**********************MEDIA QUERIES********************/
+/*************************************************/
+
+/******===For Tablets====*****/
+@media (max-width: 68em) {
+  .container {
+    max-width: var(--container-width-md);
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 8rem 0rem;
+  }
+
+  /*****=Nav Bar=******/
+  .nav {
+    /* width: 80%; */
+    top: 3rem;
+    right: 11%;
+  }
+
+  .nav-menu {
+    position: fixed;
+    width: 78%;
+    top: 4rem;
+    background: #fff;
+    flex-direction: column;
+    gap: 0;
+    right: 11%;
+    height: 38rem;
+    z-index: -3;
+    border-radius: 3rem;
+    display: none;
+    animation: animateNavItems 0.3s linear forwards;
+    transform-origin: top;
+    box-shadow: inset 0px -12px 12px -12px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-btn {
+    display: inline-block;
+    background: transparent;
+    font-size: 2.6rem;
+    color: #555;
+    cursor: pointer;
+  }
+  .nav-btn#close-menu-btn {
+    display: none;
+    font-family: inherit;
+  }
+
+  .nav-menu li {
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: 5rem;
+    padding: 1.2rem;
+    border-bottom: 1px solid #eee;
+  }
+  .nav-menu li a:link,
+  .nav-menu li a:visited {
+    color: #3b566e;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .nav-menu li:hover {
+    cursor: pointer;
+    background: #eee;
+  }
+
+  .nav-menu li:first-child {
+    border-top: 1px solid #eee;
+  }
+  .nav-menu li:last-child {
+    border-bottom: none;
+    border-radius: 11px;
+  }
+
+  @keyframes animateNavItems {
+    0% {
+      transform: rotateX(25deg);
+    }
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+
+  /*== header==*/
+  .header {
+    height: 55rem;
+  }
+  .header__container {
+    top: 22rem;
+  }
+  .header-text h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+    margin-bottom: 2.4rem;
+  }
+  .header-text p {
+    letter-spacing: 0.5px;
+  }
+
+  /* ==features== */
+  .header-features {
+    padding: 15rem 0 0;
+  }
+  .header-articles {
+    height: fit-content;
+    gap: 2.4rem;
+    grid-template-columns: repeat(2, 1fr);
+    /* margin-bottom: 14rem; */
+  }
+  .header-article p {
+    margin: 1.2rem 0 0.5rem;
+  }
+
+  /* about-section */
+
+  .about-section {
+    padding: 0 0 12rem;
+  }
+  .main-about {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+  .about-text h3 {
+    margin-bottom: 2rem;
+  }
+  .about-text p {
+    letter-spacing: 0.5px;
+  }
+  .border {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  /* ==work process== */
+
+  .work-process {
+    padding: 4rem 0rem;
+  }
+
+  .work__container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  /* ==testimonials== */
+  .testimonials__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+  .testimonial {
+    padding: 2rem;
+  }
+  .testimonial p {
+    letter-spacing: 0.75px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  /* ==pricing== */
+  .pricing__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+  .pricing-card {
+    padding: 3rem 0 3rem;
+  }
+  /* ==counter== */
+  .counters {
+    padding: 4rem 0;
+    height: 100%;
+  }
+  .counter__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+  .counter {
+    gap: 0;
+    top: 0rem;
+    left: 0;
+  }
+  .circles {
+    display: none;
+  }
+  .thefourth {
+    justify-self: center;
+  }
+  /* ==blog== */
+  .blog__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+  }
+  /* ==contact and form== */
+  .contact__container {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .form {
+    gap: 2rem;
+  }
+  .form-info {
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+}
+/******************************/
+/******===For Tablets====*****/
+/******************************/
+
+@media (max-width: 38em) {
+  .container {
+    max-width: var(--container-width-sm);
+  }
+
+  .main-p {
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+  }
+
+  /* ==nav== */
+  .nav {
+    right: 3%;
+  }
+  .nav-menu {
+    width: 94%;
+    right: 3%;
+  }
+
+  /*== header==*/
+  .header {
+    height: 85vh;
+  }
+  .header-text h1 {
+    font-size: 2.7rem;
+    font-weight: 600;
+  }
+  .header-text p {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: 1px;
+  }
+  /* ==features== */
+
+  .header-articles {
+    grid-template-columns: 1fr;
+  }
+
+  /* about-section */
+
+  .about-section {
+    padding: 0 0 12rem;
+  }
+  .main-about {
+    grid-template-columns: 1fr;
+    gap: 2.8rem;
+  }
+  .about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+  }
+  .about-text p {
+    letter-spacing: 1px;
+  }
+  .border {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+  }
+  /* ==work process== */
+
+  .work-process {
+    height: 100%;
+  }
+
+  .work__container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .work img {
+    margin-bottom: 1.6rem;
+  }
+  .work h4 {
+    font-size: 1.7rem;
+    letter-spacing: 0.75px;
+    margin-bottom: 0.8rem;
+  }
+  /* ==testimonials== */
+
+  .testimonials__container {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-img {
+    width: 8%;
+    margin-bottom: 2rem;
+  }
+  .testimonial p {
+    line-height: 1.5;
+    margin-bottom: 1.8rem;
+  }
+
+  /* ==pricing== */
+  .pricing__container {
+    grid-template-columns: 1fr;
+  }
+  .pricing-card {
+    padding: 2rem 0 2rem;
+  }
+  /* ==counter== */
+
+  .counter__container {
+    grid-template-columns: 1fr;
+    gap: 2.8rem;
+  }
+  .counter {
+    top: 0rem;
+  }
+  .count-item:hover {
+    margin-top: 0rem;
+  }
+
+  /* ==blog== */
+  .blog__container {
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+  }
+  .blog img {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  /* ==contact and form== */
+  .contact__container {
+    grid-template-columns: 1fr;
+  }
+  .left-contact {
+    gap: 2rem;
+  }
+  .form {
+    gap: 1.8rem;
+  }
+  .form-info {
+    gap: 1.8rem;
+  }
+}
+
+/*-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/* --FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
